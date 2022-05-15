@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="icon" href="../img/sl.png">
+    <script src="https://kit.fontawesome.com/8b05add983.js" crossorigin="anonymous"></script>
+    <title>Santiago Lombardi</title>
+</head>
+<body>
+    <Header>
+        <nav>
+
+            <ul>
+                <li>
+                    <a href="../Index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./sobremi.html">Sobre Mi</a>
+                </li>
+                <li>
+                    <a href="./formacion.html">Formacion</a>
+                </li>
+                <li>
+                    <a href="./proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </Header>
+    <main>
+        <section class="titulos">
+            <h1>Contacto</h1>
+        </section>
+        <section>
+            <article class="formularioContacto">
+                <!-- el formulario no me es de utilidad por lo menos por ahora, ni se como editarlo visualmente con css, asique lo dejo asi nomas -->
+                <form action="#">
+                    <input type="text" placeholder="Tu nombre"><br>
+                    <label for="email">Tu email:
+                        <input type="email" placeholder="Example@gmail.com" name="email"><br>
+                    </label>
+                    <label for="Mensaje"> Mensaje:<br>
+                        <textarea placeholder="Escribí tu mensaje aca"></textarea>
+                    </label> <br>
+                    <input type="number" placeholder="Tu telefono"><br>
+                    <div><p>Elegí una opcion:</p>
+                        <div>Contrataciones
+                            <input type="radio" name="lado" value="Contrataciones">
+                        </div>
+                        <div>Consultas
+                            <input type="radio" name="lado" value="Consultas">
+                        </div>
+                    </div>
+                    <p>Servicio</p>
+                    <select name="letra" id="letra"> 
+                        <option value="x">iOS Apps development</option>
+                        <option value="y">Android Apps development</option>
+                        <option value="z">Web development</option>
+                    </select>
+                    <input type="submit" value="Enviar el cuestionario">
+                    <input type="reset" value="Volver a empezar">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedorFooter">
+            <div class="footerContenido">
+                <section>
+                    <p>Redes Sociales</p>
+                </section>
+                <section>
+                    <a href="https://Instagram.com/SantiagoLombardi_"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="https://www.linkedin.com/in/santiago-lombardi-9a5a86231/"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://t.me/SantiagoLombardi"> <i class="fa-brands fa-telegram"></i> Telegram</a>
+                    <a href="https://wa.me/543583450330"> <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                </section>
+            </div>
+            <div class="footerContenido">
+                <section>
+                    <p>
+                        Info de contacto
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <a href="mailto:05.santiagolombardi@gmail.com"> <i class="fa-solid fa-envelope"></i> 05.santiagolombardi@gmail.com</a>
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        +54 (3583) 45-0330
+                    </p>
+                </section>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
