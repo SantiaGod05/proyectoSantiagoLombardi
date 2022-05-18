@@ -92,10 +92,14 @@ form label,div{
     justify-content: center;
 }
 
-.construccionProyectos{
+.proyectos{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card{
+    margin: 10px;
 }
 
 .formacionMain{
@@ -309,6 +313,10 @@ title{
     }
     .formacionMain{
         flex-direction: column;
+    }
+
+    .proyectos{
+        display: grid;
     }
 }
 
