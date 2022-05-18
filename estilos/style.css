@@ -180,6 +180,14 @@ section iframe{
     justify-content: center;
 }
 
+.text-center{
+    padding: 8px;
+}
+
+fieldset{
+    justify-content: center;
+}
+
 /* FOOTER */
 
 footer a{
@@ -318,6 +326,7 @@ title{
     .proyectos{
         display: grid;
     }
+
 }
 
 
