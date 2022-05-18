@@ -67,12 +67,6 @@ nav ul li a {
 /* MAIN */
 
 
-.Container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -178,6 +172,9 @@ section iframe{
 	transform: scale(1.3);
 }
 
+.row{
+    justify-content: center;
+}
 
 /* FOOTER */
 
