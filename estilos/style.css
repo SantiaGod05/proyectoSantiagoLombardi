@@ -188,6 +188,9 @@ fieldset{
     justify-content: center;
 }
 
+.formacionContenido:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.formacionContenido {overflow:hidden;}
+
 /* FOOTER */
 
 footer a{
