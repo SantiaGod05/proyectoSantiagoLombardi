@@ -1,0 +1,24 @@
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .imagenesIndex{
+        display: flex;
+        flex-direction: column;
+    }
+    .formacionMain{
+        flex-direction: column;
+    }
+
+    .proyectos{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .imagenesIndex{
+        display: inline-block;
+    }
+}
