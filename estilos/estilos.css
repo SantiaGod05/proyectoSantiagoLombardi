@@ -1,6 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.linkRedes, .pie-pagina .grupo-1 .cajaFooter .redesFooter .insta, .pie-pagina .grupo-1 .cajaFooter .redesFooter .lin, .pie-pagina .grupo-1 .cajaFooter .redesFooter .tlg, .pie-pagina .grupo-1 .cajaFooter .redesFooter .wht, .pie-pagina .grupo-1 .cajaFooter .redesFooter .mail {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #efefef;
+  background-color: #252525;
+  margin-right: 10px;
+  text-align: center;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-box-shadow: 7px 7px 10px #171717;
+          box-shadow: 7px 7px 10px #171717;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .imagenesIndex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formacionMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .proyectos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .imagenesIndex {
+    display: inline-block;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +67,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+body nav {
+  -webkit-box-shadow: 0px 0px 15px #171717;
+          box-shadow: 0px 0px 15px #171717;
 }
 
 body .titulos {
@@ -53,6 +106,12 @@ body form label, body div {
 body p {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
+}
+
+body .inicioTexto {
+  text-align: center;
+  -webkit-text-decoration-line: underline solid black;
+          text-decoration-line: underline solid black;
 }
 
 body a {
@@ -100,7 +159,7 @@ body .sobreMain {
   display: grid;
 }
 
-body .sobreMiContenido {
+body .sobreMain .sobreMiContenido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,9 +170,96 @@ body .sobreMiContenido {
   padding: 20px;
 }
 
-body .sobreMiInfo {
+body .sobreMain .sobreMiContenido .sobreMiInfo {
   padding-top: 15px;
   padding-left: 20px;
+}
+
+body .sobreMain .galeriaSM {
+  background-color: #252525;
+  border: 2px solid #1f1f1f;
+}
+
+body .sobreMain .galeriaSM .carousel-item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1000px;
+  height: 500px;
+}
+
+body .formacionMain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+body .formacionMain .formacionContenido {
+  display: -ms-grid;
+  display: grid;
+  padding: 8px;
+}
+
+body .formacionMain .formacionContenido img {
+  border-image-width: 100px;
+}
+
+body .formacionMain .formacionContenido figcaption {
+  font-family: 'Roboto', sans-serif;
+  -webkit-text-decoration: underline 1px black;
+          text-decoration: underline 1px black;
+}
+
+body .imgIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  size: auto;
+}
+
+body .imgIndex .imagenesIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+
+body .imgIndex .imagenesIndex .imagen:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+body .imgIndex .imagenesIndex .imagen img {
+  max-height: 200px;
+  padding: 8px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+body .alerta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0% 15%;
 }
 
 .pie-pagina {
@@ -173,141 +319,23 @@ body .sobreMiInfo {
   margin-bottom: 10px;
 }
 
-.pie-pagina .grupo-1 .cajaFooter .redesFooter a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #efefef;
-  background-color: #252525;
-  margin-right: 10px;
-  text-align: center;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+.pie-pagina .grupo-1 .cajaFooter .redesFooter .insta:hover {
+  color: #833a54;
 }
 
-.pie-pagina .grupo-1 .cajaFooter .redesFooter a:hover {
-  color: #8a8a8a;
+.pie-pagina .grupo-1 .cajaFooter .redesFooter .lin:hover {
+  color: #0077b5;
 }
 
-.inicioTexto {
-  text-align: center;
-  -webkit-text-decoration-line: underline solid black;
-          text-decoration-line: underline solid black;
+.pie-pagina .grupo-1 .cajaFooter .redesFooter .tlg:hover {
+  color: #0077b5;
 }
 
-.imgIndex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  size: auto;
+.pie-pagina .grupo-1 .cajaFooter .redesFooter .wht:hover {
+  color: #4fce5d;
 }
 
-.imgIndex .imagenesIndex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px;
-}
-
-.imgIndex .imagenesIndex .imagen:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-.imgIndex .imagenesIndex .imagen img {
-  max-height: 200px;
-  padding: 8px;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-/* Mobile */
-@media screen and (max-width: 767px) {
-  .imagenesIndex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contenedorFooter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  .formacionMain {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .proyectos {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .imagenesIndex {
-    display: inline-block;
-  }
-}
-
-.formacionMain {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
-}
-
-.formacionMain .formacionContenido {
-  display: -ms-grid;
-  display: grid;
-  padding: 8px;
-}
-
-.formacionMain .formacionContenido img {
-  border-image-width: 100px;
-}
-
-.formacionMain .formacionContenido figcaption {
-  font-family: 'Roboto', sans-serif;
-  -webkit-text-decoration: underline 1px black;
-          text-decoration: underline 1px black;
+.pie-pagina .grupo-1 .cajaFooter .redesFooter .mail:hover {
+  color: #e63232;
 }
 /*# sourceMappingURL=estilos.css.map */

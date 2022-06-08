@@ -1,0 +1,8 @@
+$gris1: #1f1f1f;
+$gris2: #252525;
+$gris3: #171717;
+
+@mixin shadow ($ejeX, $ejeY, $blur) {
+    box-shadow: $ejeX $ejeY $blur $gris3;
+}
+

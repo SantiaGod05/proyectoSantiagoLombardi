@@ -1,0 +1,13 @@
+.linkRedes{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #efefef;
+    background-color: $gris2;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+    @include shadow (7px, 7px, 10px);
+}
